@@ -4,8 +4,11 @@
              xmlns:local="clr-namespace:SearchBarExemplo"
              x:Class="SearchBarExemplo.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <SearchBar x:Name="BarraPesquisa" SearchCommand="{Binding PesquisaCommand}" SearchCommandParameter="{Binding Valor, Source={x:Reference BarraPesquisa}}" />
 
+    <StackLayout>
+        <Label Text="Você Pesquisou:" />
+        <Label Text="{Binding Valor}" />
+    </StackLayout>
+	
 </ContentPage>
