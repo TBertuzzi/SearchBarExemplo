@@ -45,9 +45,10 @@ namespace SearchBarExemplo.ViewModels
         {
             get
             {
-                return _pesquisaCommand ?? (_pesquisaCommand = new Command<string>((texto) =>
+                return _pesquisaCommand ?? (_pesquisaCommand = new Command(() =>
                 {
-                   
+                  
+                   //Aqui vai o que voce quer fazer com a pesquisa
                 }));
             }
         }

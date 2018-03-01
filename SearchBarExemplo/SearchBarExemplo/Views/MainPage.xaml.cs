@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SearchBarExemplo.ViewModels;
 using Xamarin.Forms;
 
 namespace SearchBarExemplo
@@ -12,6 +13,7 @@ namespace SearchBarExemplo
 		public MainPage()
 		{
 			InitializeComponent();
+            BindingContext = new MainViewModel(); 
 		}
 	}
 }
